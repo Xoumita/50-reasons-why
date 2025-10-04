@@ -1,3 +1,18 @@
+/* :root {
+  --heading-font: 'Pacifico', cursive;
+  --body-font: 'Poppins', sans-serif;
+} */
+
+/* Headings – title, etc. */
+/* h1, .title {
+  font-family: var(--heading-font);
+} */
+
+/* Body / reason text / buttons */
+/* body, .reason, button, .nav button {
+  font-family: var(--body-font);
+} */
+
 body {
   margin: 0;
   font-family: sans-serif;
@@ -8,14 +23,20 @@ body {
   height: 100vh;
 }
 
+body {
+  background: url('https://i.pinimg.com/736x/bb/b6/83/bbb6836d15454ae294fa5f95a7f1a59c.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+
 /* Centered book container */
 .book {
   width: 90%;
   max-width: 410px; /* Perfect for iPhone 15 width */
-  height: 70vh;
+  height: 60vh;
   background: #fff;
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-  border-radius: 16px;
+  border-radius: 6px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -24,6 +45,8 @@ body {
   transition: transform 0.6s ease-in-out;
   margin: 10%; /* Add margin on sides */
   overflow: hidden;
+  background: url('https://i.pinimg.com/736x/35/81/ca/3581ca6422cdf6716447f02fdc58fc27.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 /* Headings and text */

@@ -34,7 +34,7 @@ function updatePage() {
           <br><br>
           🎉 Happy Birthday, my love 💕
           <br><br>
-          <button onclick="showSecretPage()" style="margin-top:15px;padding:10px 20px;border:none;background:#d63384;color:#fff;border-radius:8px;cursor:pointer;">
+          <button onclick="showSecretPage()" style="margin-top:15px;padding:10px 20px;border:none;background:#d63384;color:#fff;border-radius:8px;cursor:pointer;font-family: 'Pacifico', cursive;">
           One More Reason?
           </button>
       </div>

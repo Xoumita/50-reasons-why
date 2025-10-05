@@ -20,7 +20,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 95vh;
 }
 
 body {
@@ -52,7 +52,7 @@ body {
 /* Headings and text */
 h1 {
   font-size: 1.65rem;
-  color: #d63384;
+  color: #af3352;
   margin-bottom: 1rem;
   font-weight: 300;
   font-family: "Praise", cursive;
@@ -75,7 +75,7 @@ p {
 
 /* Navigation */
 .nav button {
-  background: #d63384;
+  background: #af3352;
   border: none;
   padding: 10px 20px;
   border-radius: 8px;

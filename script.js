@@ -1,11 +1,74 @@
 const reasons = [
-  "You make me laugh even on my worst days 💕",
-  "You always listen to me patiently 🥺",
-  "The way you look at me makes my heart melt ❤️",
-  "You remember the little details about me 🌸",
-  "You support my dreams and believe in me ✨",
+  "You make me laugh even on my worst days",
+  "You always listen to me patiently",
+  "The way you look at me makes my heart melt",
+  "You remember the little details about me",
+  "You support my dreams and believe in me",
+  "You make me laugh like no one else can.",
+  "You turn ordinary moments into magical memories.",
+  "You know exactly how to cheer me up.",
+  "You make me feel safe and loved.",
+  "You support me in everything I do.",
+  // "You understand me without me having to say a word.",
+  "You are patient with my moods.",
+  "You notice the little things that make me happy.",
+  // "You inspire me to be a better person.",
+  "You make me feel appreciated every single day.",
+  "You are honest and trustworthy.",
+  "You love me for who I truly am.",
+  "You hold me close when I need comfort.",
+  "You surprise me in the sweetest ways.",
+  "You make me feel special in small ways.",
+  "You are kind to everyone around you.",
+  "You respect my opinions and feelings.",
+  "You make time for me even when busy.",
+  "You make me feel like home.",
+  "You have the most beautiful smile.",
+  "You are my favorite person to talk to.",
+  "You make me feel confident.",
+  "You love my quirks.",
+  "You support my dreams and ambitions.",
+  "You are adventurous and fun to be with.",
+  "You make me feel lucky to have you.",
+  "You listen to me without judgment.",
+  "You care about my happiness more than anything.",
+  "You are sweet even in little gestures.",
+  // "You make my heart skip a beat.",
+  "You are romantic in your own way.",
+  "You are my best friend and lover.",
+  "You are my safe place to be myself.",
+  "You make sacrifices for me without complaint.",
+  "You encourage me when I doubt myself.",
+  "You are thoughtful and considerate.",
+  // "You make ordinary days exciting.",
+  "You make me feel beautiful inside and out.",
+  "You always have my back.",
+  "You make me feel loved in ways I never knew possible.",
+  "You are dependable and reliable.",
+  "You make me laugh until my cheeks hurt.",
+  "You have a kind and loving heart.",
+  "You believe in us even when things get tough.",
+  "You make me feel cherished.",
+  "You are my favorite person to dream with.",
+  "You accept me completely, flaws and all.",
+  // "You are my partner in crime.",
+  "You make me feel like the happiest version of myself.",
+  "You are simply irreplaceable.",
+
   // 👉 Add the rest until you have 50 reasons
 ];
+// Fisher–Yates Shuffle Algorithm
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
+// Shuffle reasons at the start
+const shuffledReasons = shuffle([...reasons]);
+
 
 let current = -1;
 const title = document.getElementById("title");
@@ -23,7 +86,8 @@ function updatePage() {
   nextBtn.classList.remove("hidden"); // show next
 } else if (current < reasons.length) {
   title.innerText = `Reason #${current + 1}`;
-  reason.innerText = reasons[current];
+ reason.innerText = shuffledReasons[current];
+
   backBtn.classList.remove("hidden");
   nextBtn.classList.remove("hidden");
 } else {
@@ -32,8 +96,10 @@ function updatePage() {
       <div style="flex-direction: column;">
           And I’ll keep finding more reasons every day… 
           <br><br>
-          🎉 Happy Birthday, my love 💕
-          <br><br>
+          Happy Birthday, Boyfie.
+          <br>
+          I love you.
+          <br>
           <button onclick="showSecretPage()" style="margin-top:15px;padding:10px 20px;border:none;background:#d63384;color:#fff;border-radius:8px;cursor:pointer;font-family: 'Pacifico', cursive;font-weight: 400;">
           One More Reason?
           </button>
@@ -133,9 +199,12 @@ function showSecretPage() {
   reason.innerHTML = `
   <div style="flex-direction: column;">
     The biggest reason is… <br><br>
-    <b>YOU. Always you.</b>
-    <br><br>
-    Thank you for being mine forever,
+    <b>YOU.</b>
+    <br>
+    There isn't any greater reason than this,
+    <br>
+    <br>
+    Thank you for being there forever.
    </div> 
   `;
   launchConfetti();
